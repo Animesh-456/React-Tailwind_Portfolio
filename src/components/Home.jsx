@@ -3,15 +3,31 @@ import fork from '../assets/fork.gif'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md"
 import { Link } from "react-scroll";
 import Projects from './Projects';
-
+import { useState, useEffect } from 'react';
+import TypingAnimation from './typing';
 const Home = () => {
+
+    //const [text, setText] = useState('');
+
+    // useEffect(() => {
+    //     const intervalId = setInterval(() => {
+    //         const fullText = 'Hi, I am Animesh, Full Stack Developer';
+    //         setText(fullText.substring(0, text.length + 1));
+    //         if (text.length === fullText.length) {
+    //             clearInterval(intervalId);
+    //         }
+    //     }, 100);
+    //     return () => clearInterval(intervalId);
+    // }, [text]);
+
+
     return (
         <div name="home" className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800">
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
                 <div className='flex flex-col justify-center h-full'>
                     <div>
                         <h2 className='mt-20 text-4xl sm:text-5xl font-bold text-green-500'>
-                            Hi, I am Animesh, Full Stack Developer
+                        <TypingAnimation text="Hi, I am Animesh, Full Stack Developer" speed={100} />
                         </h2>
                         <p className='text-white py-4 max-w-md'>
                             I’m a full-stack developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building responsive full-stack web applications.

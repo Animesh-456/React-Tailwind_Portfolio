@@ -22,12 +22,17 @@ const About = () => {
                         </p>
                         <br>
                         </br>
-                        <button className='text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-lime-400 to-green-500'>
+                        {/* <button className='text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-lime-400 to-green-500'>
                             Get to know more about my skills
                             <span className="animate-bounce">
                                 <BsFillCaretDownFill size={25} className="ml-1" />
                             </span>
-                        </button>            
+                        </button>             */}
+                        {/* <h1 className="text-white-500 w-fit py-3 flex items-stretch text-2xl">Get to know more about my skills
+                            <span className="animate-bounce">
+                                <BsFillCaretDownFill size={35} className="ml-1 text-green-500" />
+                            </span>
+                        </h1> */}
 
                     </div>
                 </div>
